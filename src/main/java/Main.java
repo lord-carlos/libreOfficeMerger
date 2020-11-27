@@ -9,7 +9,7 @@ public class Main {
     public static final String PATH_TO_OUTPUT_FILE = RELATIVE_PATH + "output.odt";
     public static final String PATH_TO_ODT_FILE = RELATIVE_PATH + "base.odt";
 
-    public static void main(String[] args) throws IOException, com.sun.star.io.IOException {
+    public static void main(String[] args) throws IOException, com.sun.star.io.IOException, InterruptedException {
         // !
         // You might want to adjust the LIBRE_OFFICE_DIR in the LibreOfficeHelper.java class!
 
@@ -21,8 +21,9 @@ public class Main {
         Files.write(Paths.get(PATH_TO_OUTPUT_FILE), LibreOfficeHelper.INSTANCE.convertXTextDocumentToByteArray(returnDocument));
 
 
-        System.out.println("Done! PLEASE KILL THE APP.");
         SocketBootstrap.getDefault().disconnect(baseDocument);
         SocketBootstrap.getDefault().disconnect(returnDocument);
+        Thread.sleep(500);
+        System.exit(0);
     }
 }

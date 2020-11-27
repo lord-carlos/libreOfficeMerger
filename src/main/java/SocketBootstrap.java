@@ -82,6 +82,7 @@ public class SocketBootstrap {
 
             XUnoUrlResolver xUrlResolver = UnoUrlResolver.create(xLocalContext);
 
+            Thread.sleep(500);
             server.start();
 
             try {
