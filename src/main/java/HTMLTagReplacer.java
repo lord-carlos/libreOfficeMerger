@@ -53,7 +53,7 @@ class HTMLTagReplacer {
     }
 
     public XTextDocument replaceHTMLTag(XTextDocument baseFile) {
-        // Set properties for at åbne et HTML dokument
+        // Set properties to open the HTML document
         OOInputStream input = new OOInputStream(REPLACEMENT_TEXT.getBytes());
         PropertyValue[] conversionProperties = Props.makeProps("InputStream", input, "Hidden", true, "FilterName", "HTML (StarWriter)");
 
