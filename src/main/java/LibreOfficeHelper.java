@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 
 public enum LibreOfficeHelper {
     INSTANCE;
-    public static final String LIBRE_OFFICE_DIR = "C:\\Program Files (x86)\\BookPlan_Writer\\libreoffice\\program\\";
+    public static final String LIBRE_OFFICE_DIR = "C:\\Program Files\\LibreOffice\\program\\";
     private XComponentContext ctx;
 
     LibreOfficeHelper() {

@@ -198,7 +198,7 @@ public class SocketBootstrap {
 
             File fOffice = NativeLibraryLoader.getResource(loader, "soffice.exe");
             if(fOffice == null) {
-                throw new BootstrapException("Bookplan Writer executable not foundt.");
+                throw new BootstrapException("LibreOffice Writer executable not foundt.");
             }
 
             String[] command = new String[options.length + 2];

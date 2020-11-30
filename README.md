@@ -22,3 +22,7 @@ The merge creates a `style:master-page-name="HTML"` for the `style:style` for th
 
 But why?
 The important code is in `HTMLTagReplacer.java`
+
+### Requirement
+
+Windows with LibreOffice 6.4.3
